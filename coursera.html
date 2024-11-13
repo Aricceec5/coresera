@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Preview</title>
+    <script src="coursera.js"></script>
+    <style>
+        #image {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            background-color: #ddd;
+            text-align: center;
+            line-height: 200px;
+            mask-repeat: no-repeat;
+        }
+        .preview {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">Hover over an image below to display here</div>
+    <img src="./image1.jpg" alt="Image 1" class="preview" onmouseover="update(this)" onmouseout="undo()">
+    <img src="./image2.jpg" alt="Image 2" class="preview" onmouseover="update(this)" onmouseout="undo()">
+    <img src="./image3.jpg" alt="Image 3" class="preview" onmouseover="update(this)" onmouseout="undo()">
+</body>
